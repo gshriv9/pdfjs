@@ -77,7 +77,8 @@ export class AppComponent implements OnInit, AfterViewInit {
         // iterate over fields
         const fieldManager = annotManager.getFieldManager();
         fieldManager.forEachField(field => {
-          console.log(field.getValue());
+
+          alert('Old Value is' + field.getValue());
           field.setValue('new value');
         });
       });
